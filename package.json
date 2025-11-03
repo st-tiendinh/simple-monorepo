@@ -1,0 +1,19 @@
+{
+  "name": "simple-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:nextjs": "npm run dev -w @monorepo/nextjs-app",
+    "dev:express": "npm run dev -w @monorepo/express-server",
+    "dev:vite": "npm run dev -w @monorepo/vite-app",
+    "build": "npm run build --workspaces --if-present",
+    "clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
