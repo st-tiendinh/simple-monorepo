@@ -9,7 +9,7 @@ simple-monorepo/
 ├── apps/
 │   ├── nextjs-app/      # Next.js 14 app (port 3000)
 │   ├── express-server/  # Express API server (port 3001)
-│   └── vite-app/        # Vite React app (port 3002)
+│   └── vite-app/        # Vite React app (port 5173)
 └── packages/
     ├── button/          # Shared React Button component
     └── utils/           # Shared utilities (formatDate)

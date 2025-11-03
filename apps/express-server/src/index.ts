@@ -1,5 +1,5 @@
 import express from 'express';
-import { formatDate } from '@monorepo/utils';
+import { formatDate } from '@monorepo/packages';
 
 const app = express();
 const port = 3001;
@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/date', (req, res) => {
-  const format = req.query.format as 'short' | 'long' || 'short';
+  const format = (req.query.format as 'short' | 'long') || 'short';
   res.json({
     date: formatDate(new Date(), format),
   });

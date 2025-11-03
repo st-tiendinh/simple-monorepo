@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from '@monorepo/packages/ui';
-import { formatDate } from '@monorepo/utils';
+import { formatDate } from '@monorepo/packages/utils';
 
 export default function Home() {
   const today = new Date();
