@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['@monorepo/ui', '@monorepo/utils'],
+  transpilePackages: ['@monorepo/packages/ui', '@monorepo/packages/utils'],
 };
 
 module.exports = nextConfig;

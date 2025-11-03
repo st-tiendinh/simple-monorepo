@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@monorepo/ui';
+import { Button } from '@monorepo/packages/ui';
 import { formatDate } from '@monorepo/utils';
 
 export default function Home() {
@@ -10,9 +10,7 @@ export default function Home() {
     <main style={{ padding: '50px', fontFamily: 'system-ui' }}>
       <h1>Next.js App</h1>
       <p>Today is: {formatDate(today, 'long')}</p>
-      <Button onClick={() => alert('Hello from Next.js!')}>
-        Click me
-      </Button>
+      <Button onClick={() => alert('Hello from Next.js!')}>Click me</Button>
     </main>
   );
 }
