@@ -1,3 +1,4 @@
+// Formats a date into a specified string format.
 export function formatDate(date: Date | string, format: 'short' | 'long' = 'short'): string {
   const d = typeof date === 'string' ? new Date(date) : date;
 
