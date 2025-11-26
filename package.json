@@ -7,9 +7,9 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:nextjs": "npm run dev -w @monorepo/nextjs-app",
+    "dev:lp": "npm run dev -w @monorepo/vite-app",
+    "dev:admin": "npm run dev -w @monorepo/nextjs-app",
     "dev:express": "npm run dev -w @monorepo/express-server",
-    "dev:vite": "npm run dev -w @monorepo/vite-app",
     "build": "npm run build --workspaces --if-present",
     "clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules"
   },
