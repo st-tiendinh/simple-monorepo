@@ -10,6 +10,8 @@
     "dev:lp": "npm run dev -w @monorepo/vite-app",
     "dev:admin": "npm run dev -w @monorepo/nextjs-app",
     "dev:express": "npm run dev -w @monorepo/express-server",
+    "start:admin": "npm start -w @monorepo/nextjs-app",
+    "start:lp": "npm start -w @monorepo/vite-app",
     "build": "npm run build --workspaces --if-present",
     "clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules"
   },
